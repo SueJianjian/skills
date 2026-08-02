@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "skills/*/BENCHMARK.md",
   "skill_count": 323,
-  "result_row_count": 2995,
+  "result_row_count": 2945,
   "skills_without_results": [
     "deepstream-generate-pipeline",
     "digital-health-clinical-asr-setup",
@@ -18,7 +18,12 @@
     "mcore-run-on-slurm",
     "mcore-split-pr",
     "mcore-testing",
+    "nemo-automodel-distributed-training",
+    "nemo-automodel-model-onboarding",
     "nemo-data-designer-plugin",
+    "nemo-relay-debug-runtime-integration",
+    "nemo-relay-get-started",
+    "nemo-relay-plugin-observability",
     "nemoclaw-user-guide",
     "omniverse-cad-to-simready",
     "omniverse-realtime-viewer",
@@ -319,57 +324,48 @@
     },
     {
       "skill": "cupynumeric-install",
-      "evaluation_date": "2026-05-28",
-      "profile": "external",
-      "environment": "local",
+      "evaluation_date": "2026-07-27",
+      "profile": null,
+      "environment": "k8s-sandbox",
       "tasks": 24,
-      "attempts_per_task": 2,
+      "attempts_per_task": 1,
       "pass_threshold_pct": 50.0,
       "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "agents": [],
       "catalog_dir": "cupynumeric-install",
       "component": "cuPyNumeric",
       "has_results": true,
-      "average_uplift_pct": 27.6
+      "average_uplift_pct": 31.4
     },
     {
       "skill": "cupynumeric-migration-readiness",
-      "evaluation_date": "2026-05-29",
-      "profile": "external",
-      "environment": "local",
+      "evaluation_date": "2026-07-27",
+      "profile": null,
+      "environment": "k8s-sandbox",
       "tasks": 27,
-      "attempts_per_task": 2,
+      "attempts_per_task": 1,
       "pass_threshold_pct": 50.0,
-      "verdict": "FAIL",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "verdict": "PASS",
+      "agents": [],
       "catalog_dir": "cupynumeric-migration-readiness",
       "component": "cuPyNumeric",
       "has_results": true,
-      "average_uplift_pct": 14.9
+      "average_uplift_pct": 26.2
     },
     {
       "skill": "cupynumeric-parallel-data-load",
-      "evaluation_date": "2026-05-29",
-      "profile": "external",
-      "environment": "local",
+      "evaluation_date": "2026-07-27",
+      "profile": null,
+      "environment": "k8s-sandbox",
       "tasks": 7,
-      "attempts_per_task": 2,
+      "attempts_per_task": 1,
       "pass_threshold_pct": 50.0,
       "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "agents": [],
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
       "has_results": true,
-      "average_uplift_pct": 16.1
+      "average_uplift_pct": 25.2
     },
     {
       "skill": "dali-dynamic-mode",
@@ -2920,21 +2916,18 @@
     },
     {
       "skill": "nemo-automodel-distributed-training",
-      "evaluation_date": "2026-06-26",
-      "profile": "external",
-      "environment": "astra-sandbox",
-      "tasks": 3,
+      "evaluation_date": "2026-07-31",
+      "profile": null,
+      "environment": "k8s-sandbox",
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "agents": [],
       "catalog_dir": "nemo-automodel-distributed-training",
       "component": "NeMo AutoModel",
-      "has_results": true,
-      "average_uplift_pct": 44.6
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "nemo-automodel-launcher-config",
@@ -2956,21 +2949,18 @@
     },
     {
       "skill": "nemo-automodel-model-onboarding",
-      "evaluation_date": "2026-06-26",
-      "profile": "external",
-      "environment": "astra-sandbox",
-      "tasks": 3,
+      "evaluation_date": "2026-07-31",
+      "profile": null,
+      "environment": "k8s-sandbox",
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "agents": [],
       "catalog_dir": "nemo-automodel-model-onboarding",
       "component": "NeMo AutoModel",
-      "has_results": true,
-      "average_uplift_pct": 40.7
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "nemo-automodel-recipe-development",
@@ -3388,36 +3378,33 @@
     },
     {
       "skill": "nemo-relay-debug-runtime-integration",
-      "evaluation_date": "2026-07-15",
-      "profile": "external",
-      "environment": "astra-sandbox",
-      "tasks": 4,
+      "evaluation_date": "2026-07-30",
+      "profile": null,
+      "environment": "k8s-sandbox",
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
+      "agents": [],
       "catalog_dir": "nemo-relay-debug-runtime-integration",
       "component": "NeMo Relay",
-      "has_results": true,
-      "average_uplift_pct": 27.4
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "nemo-relay-get-started",
-      "evaluation_date": "2026-07-20",
+      "evaluation_date": "2026-07-30",
       "profile": null,
       "environment": "k8s-sandbox",
-      "tasks": 15,
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
       "agents": [],
       "catalog_dir": "nemo-relay-get-started",
       "component": "NeMo Relay",
-      "has_results": true,
-      "average_uplift_pct": 30.5
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "nemo-relay-install",
@@ -3547,18 +3534,18 @@
     },
     {
       "skill": "nemo-relay-plugin-observability",
-      "evaluation_date": "2026-07-20",
+      "evaluation_date": "2026-07-30",
       "profile": null,
       "environment": "k8s-sandbox",
-      "tasks": 20,
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
       "agents": [],
       "catalog_dir": "nemo-relay-plugin-observability",
       "component": "NeMo Relay",
-      "has_results": true,
-      "average_uplift_pct": 33.5
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "nemo-retriever",
@@ -7028,271 +7015,271 @@
       "catalog_dir": "cupynumeric-install",
       "component": "cuPyNumeric",
       "dimension": "Security",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 79.0,
-      "uplift_pct": 21.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Security",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 79.0,
-      "uplift_pct": 31.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 91.0,
-      "uplift_pct": 16.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 84.0,
-      "uplift_pct": 19.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 90.0,
-      "uplift_pct": 40.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 73.0,
-      "uplift_pct": 29.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 82.0,
-      "uplift_pct": 16.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 78.0,
-      "uplift_pct": 28.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 83.0,
-      "uplift_pct": 45.0
-    },
-    {
-      "catalog_dir": "cupynumeric-install",
-      "component": "cuPyNumeric",
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 70.0,
-      "uplift_pct": 31.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Security",
-      "num": 8,
-      "agent": "claude-code",
+      "num": 24,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
       "score_pct": 100.0,
       "uplift_pct": 0.0
     },
     {
-      "catalog_dir": "cupynumeric-migration-readiness",
+      "catalog_dir": "cupynumeric-install",
       "component": "cuPyNumeric",
       "dimension": "Security",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 100.0,
-      "uplift_pct": 1.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 98.0,
-      "uplift_pct": 24.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 87.0,
-      "uplift_pct": 13.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "claude-code",
+      "num": 24,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
       "score_pct": 96.0,
-      "uplift_pct": 42.0
+      "uplift_pct": 0.0
     },
     {
-      "catalog_dir": "cupynumeric-migration-readiness",
+      "catalog_dir": "cupynumeric-install",
       "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 66.0,
-      "uplift_pct": 8.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 81.0,
-      "uplift_pct": 16.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 70.0,
-      "uplift_pct": 15.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 81.0,
-      "uplift_pct": 28.0
-    },
-    {
-      "catalog_dir": "cupynumeric-migration-readiness",
-      "component": "cuPyNumeric",
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 52.0,
-      "uplift_pct": 2.0
-    },
-    {
-      "catalog_dir": "cupynumeric-parallel-data-load",
-      "component": "cuPyNumeric",
-      "dimension": "Security",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 100.0,
+      "dimension": "Correctness",
+      "num": 24,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 96.0,
       "uplift_pct": 7.0
     },
     {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Correctness",
+      "num": 24,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 88.0,
+      "uplift_pct": 8.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 24,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 97.0,
+      "uplift_pct": 75.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 24,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 93.0,
+      "uplift_pct": 47.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Effectiveness",
+      "num": 24,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 83.0,
+      "uplift_pct": 13.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Effectiveness",
+      "num": 24,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 70.0,
+      "uplift_pct": 12.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Efficiency",
+      "num": 24,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 79.0,
+      "uplift_pct": 74.0
+    },
+    {
+      "catalog_dir": "cupynumeric-install",
+      "component": "cuPyNumeric",
+      "dimension": "Efficiency",
+      "num": 24,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 80.0,
+      "uplift_pct": 78.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Security",
+      "num": 27,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 100.0,
+      "uplift_pct": 0.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Security",
+      "num": 27,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 96.0,
+      "uplift_pct": -4.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Correctness",
+      "num": 27,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 96.0,
+      "uplift_pct": 20.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Correctness",
+      "num": 27,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 92.0,
+      "uplift_pct": 18.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 27,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 100.0,
+      "uplift_pct": 43.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 27,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 83.0,
+      "uplift_pct": 33.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Effectiveness",
+      "num": 27,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 82.0,
+      "uplift_pct": 33.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Effectiveness",
+      "num": 27,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 64.0,
+      "uplift_pct": 19.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Efficiency",
+      "num": 27,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 93.0,
+      "uplift_pct": 48.0
+    },
+    {
+      "catalog_dir": "cupynumeric-migration-readiness",
+      "component": "cuPyNumeric",
+      "dimension": "Efficiency",
+      "num": 27,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 96.0,
+      "uplift_pct": 52.0
+    },
+    {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
       "dimension": "Security",
-      "num": 8,
-      "agent": "codex",
+      "num": 7,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
       "score_pct": 100.0,
       "uplift_pct": 0.0
     },
     {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 92.0,
-      "uplift_pct": 16.0
-    },
-    {
-      "catalog_dir": "cupynumeric-parallel-data-load",
-      "component": "cuPyNumeric",
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 89.0,
-      "uplift_pct": 25.0
-    },
-    {
-      "catalog_dir": "cupynumeric-parallel-data-load",
-      "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 95.0,
-      "uplift_pct": 21.0
-    },
-    {
-      "catalog_dir": "cupynumeric-parallel-data-load",
-      "component": "cuPyNumeric",
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 86.0,
+      "dimension": "Security",
+      "num": 7,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 100.0,
       "uplift_pct": 14.0
     },
     {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 84.0,
-      "uplift_pct": 16.0
+      "dimension": "Correctness",
+      "num": 7,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 91.0,
+      "uplift_pct": 31.0
+    },
+    {
+      "catalog_dir": "cupynumeric-parallel-data-load",
+      "component": "cuPyNumeric",
+      "dimension": "Correctness",
+      "num": 7,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 77.0,
+      "uplift_pct": 14.0
+    },
+    {
+      "catalog_dir": "cupynumeric-parallel-data-load",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 7,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 94.0,
+      "uplift_pct": 32.0
+    },
+    {
+      "catalog_dir": "cupynumeric-parallel-data-load",
+      "component": "cuPyNumeric",
+      "dimension": "Discoverability",
+      "num": 7,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 89.0,
+      "uplift_pct": 23.0
     },
     {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
       "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 80.0,
-      "uplift_pct": 30.0
+      "num": 7,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 93.0,
+      "uplift_pct": 40.0
+    },
+    {
+      "catalog_dir": "cupynumeric-parallel-data-load",
+      "component": "cuPyNumeric",
+      "dimension": "Effectiveness",
+      "num": 7,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 89.0,
+      "uplift_pct": 32.0
     },
     {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
       "dimension": "Efficiency",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 83.0,
-      "uplift_pct": 21.0
+      "num": 7,
+      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
+      "score_pct": 91.0,
+      "uplift_pct": 32.0
     },
     {
       "catalog_dir": "cupynumeric-parallel-data-load",
       "component": "cuPyNumeric",
       "dimension": "Efficiency",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 74.0,
-      "uplift_pct": 11.0
+      "num": 7,
+      "agent": "Codex (`openai/openai/gpt-5.5`)",
+      "score_pct": 96.0,
+      "uplift_pct": 34.0
     },
     {
       "catalog_dir": "dali-dynamic-mode",
@@ -19895,96 +19882,6 @@
       "uplift_pct": 14.0
     },
     {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Security",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Security",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Correctness",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 64.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Correctness",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 94.0,
-      "uplift_pct": 29.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Discoverability",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 82.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Discoverability",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 85.0,
-      "uplift_pct": 60.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Effectiveness",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 97.0,
-      "uplift_pct": 63.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Effectiveness",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 93.0,
-      "uplift_pct": 30.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Efficiency",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 94.0,
-      "uplift_pct": 61.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-distributed-training",
-      "component": "NeMo AutoModel",
-      "dimension": "Efficiency",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 84.0,
-      "uplift_pct": 57.0
-    },
-    {
       "catalog_dir": "nemo-automodel-launcher-config",
       "component": "NeMo AutoModel",
       "dimension": "Security",
@@ -20073,96 +19970,6 @@
       "agent": "codex",
       "score_pct": 70.0,
       "uplift_pct": 4.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Security",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Security",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Correctness",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 48.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Correctness",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 95.0,
-      "uplift_pct": 32.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Discoverability",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 75.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Discoverability",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 83.0,
-      "uplift_pct": 49.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Effectiveness",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 95.0,
-      "uplift_pct": 56.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Effectiveness",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 94.0,
-      "uplift_pct": 41.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Efficiency",
-      "num": 3,
-      "agent": "claude-code",
-      "score_pct": 94.0,
-      "uplift_pct": 70.0
-    },
-    {
-      "catalog_dir": "nemo-automodel-model-onboarding",
-      "component": "NeMo AutoModel",
-      "dimension": "Efficiency",
-      "num": 3,
-      "agent": "codex",
-      "score_pct": 74.0,
-      "uplift_pct": 36.0
     },
     {
       "catalog_dir": "nemo-automodel-recipe-development",
@@ -22145,186 +21952,6 @@
       "uplift_pct": -3.0
     },
     {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 4,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 4,
-      "agent": "codex",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 4,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 31.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 4,
-      "agent": "codex",
-      "score_pct": 88.0,
-      "uplift_pct": 20.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 4,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 56.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 4,
-      "agent": "codex",
-      "score_pct": 91.0,
-      "uplift_pct": 47.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 4,
-      "agent": "claude-code",
-      "score_pct": 96.0,
-      "uplift_pct": 22.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 4,
-      "agent": "codex",
-      "score_pct": 91.0,
-      "uplift_pct": 10.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 4,
-      "agent": "claude-code",
-      "score_pct": 95.0,
-      "uplift_pct": 52.0
-    },
-    {
-      "catalog_dir": "nemo-relay-debug-runtime-integration",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 4,
-      "agent": "codex",
-      "score_pct": 87.0,
-      "uplift_pct": 36.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 15,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 93.0,
-      "uplift_pct": 3.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 15,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 77.0,
-      "uplift_pct": -7.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 15,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 89.0,
-      "uplift_pct": 61.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 15,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 89.0,
-      "uplift_pct": 27.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 15,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 94.0,
-      "uplift_pct": 44.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 15,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 87.0,
-      "uplift_pct": 40.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 15,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 69.0,
-      "uplift_pct": 33.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 15,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 74.0,
-      "uplift_pct": 24.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 15,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 76.0,
-      "uplift_pct": 38.0
-    },
-    {
-      "catalog_dir": "nemo-relay-get-started",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 15,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 74.0,
-      "uplift_pct": 42.0
-    },
-    {
       "catalog_dir": "nemo-relay-install",
       "component": "NeMo Relay",
       "dimension": "Security",
@@ -22953,96 +22580,6 @@
       "agent": "codex",
       "score_pct": 85.0,
       "uplift_pct": 22.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 20,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 2.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Security",
-      "num": 20,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 100.0,
-      "uplift_pct": 2.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 20,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 51.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Correctness",
-      "num": 20,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 94.0,
-      "uplift_pct": 4.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 20,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 51.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Discoverability",
-      "num": 20,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 93.0,
-      "uplift_pct": 34.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 20,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 89.0,
-      "uplift_pct": 48.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Effectiveness",
-      "num": 20,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 86.0,
-      "uplift_pct": 23.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 20,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 96.0,
-      "uplift_pct": 55.0
-    },
-    {
-      "catalog_dir": "nemo-relay-plugin-observability",
-      "component": "NeMo Relay",
-      "dimension": "Efficiency",
-      "num": 20,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 93.0,
-      "uplift_pct": 65.0
     },
     {
       "catalog_dir": "nemo-retriever",
