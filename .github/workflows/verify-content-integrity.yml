@@ -93,7 +93,7 @@ jobs:
           # Failed sweep: build the tracker body from the report's
           # finding lines. If the report file is missing (step crashed
           # before producing output), say so rather than posting empty.
-          findings=$(grep -E "MISMATCH|MISSING|EXTRA|INVALID|could not parse" /tmp/integrity-report.txt || true)
+          findings=$(grep -E '^  - .*(MISMATCH|MISSING|EXTRA|INVALID|could not parse)' /tmp/integrity-report.txt || true)
           finding_count=$(printf '%s' "$findings" | grep -c . || true)
 
           body=/tmp/integrity-issue-body.md
