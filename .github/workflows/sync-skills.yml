@@ -308,6 +308,20 @@ jobs:
             fi
           done < /tmp/rsynced-skill-dirs.txt
 
+          # A reverted catalog copy may itself predate the integrity gate and
+          # already carry stale content. Never preserve a known-bad fallback:
+          # remove every signed skill that still fails a full digest check.
+          # A later sync restores it automatically once the source publishes
+          # a content-aligned signature.
+          while IFS= read -r dir; do
+            [ -z "$dir" ] && continue
+            product=$(basename "$dir")
+            reason="sig mismatch: dropped (catalog fallback also fails content-integrity verification; re-run signing at source)"
+            echo "$product|$dir|$reason" >> "$dropped"
+            echo "  ✗ $dir — $reason"
+            rm -rf "$dir"
+          done < <(python3 .github/scripts/verify_content_integrity.py --list-invalid-dirs)
+
           # Mark any product with a dropped skill as "changed" so the PR
           # opens (matches the pattern used by the compliance step).
           # `--` and `-F` are explicit so the leading "-" in the pattern

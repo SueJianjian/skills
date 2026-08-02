@@ -24,6 +24,7 @@ Exit code 0 = all checked skills match their signatures; 1 = drift found.
 """
 from __future__ import annotations
 
+import argparse
 import base64
 import hashlib
 import json
@@ -34,6 +35,16 @@ from pathlib import Path
 
 SKILLS_DIR = Path("skills")
 SIG_NAME = "skill.oms.sig"
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--list-invalid-dirs",
+        action="store_true",
+        help="print invalid signed skill directories, one per line, and exit successfully",
+    )
+    return parser.parse_args()
 
 
 def changed_skill_dirs(base_sha: str, head_sha: str) -> list[Path]:
@@ -93,6 +104,13 @@ def verify_skill(skill_dir: Path) -> list[str]:
 
 
 def main() -> int:
+    args = parse_args()
+    if args.list_invalid_dirs:
+        for skill_dir in all_skill_dirs():
+            if verify_skill(skill_dir):
+                print(skill_dir.as_posix())
+        return 0
+
     event = os.environ.get("GITHUB_EVENT_NAME", "")
     if event == "pull_request":
         base_sha = os.environ["BASE_SHA"]
