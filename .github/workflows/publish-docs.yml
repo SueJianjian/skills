@@ -9,14 +9,21 @@ jobs:
   run:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' && contains(github.ref, 'refs/heads/main') && github.run_number > 1 }}
+    env:
+      FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
     steps:
+      - name: Skip when Fern credentials are unavailable
+        if: ${{ env.FERN_TOKEN == '' }}
+        run: echo "FERN_TOKEN is not configured; skipping documentation publishing."
+
       - name: Checkout repository
-        uses: actions/checkout@v4
+        if: ${{ env.FERN_TOKEN != '' }}
+        uses: actions/checkout@v6
 
       - name: Install Fern
+        if: ${{ env.FERN_TOKEN != '' }}
         run: npm install -g fern-api
 
       - name: Publish Docs
-        env:
-          FERN_TOKEN: ${{ secrets.FERN_TOKEN }}
+        if: ${{ env.FERN_TOKEN != '' }}
         run: fern generate --docs
