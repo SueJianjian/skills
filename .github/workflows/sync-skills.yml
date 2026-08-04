@@ -857,7 +857,8 @@ jobs:
           # re-added entries already present from the rsync loop.
           sort -u -o /tmp/changed-components.txt /tmp/changed-components.txt
           changed=$(cat /tmp/changed-components.txt | tr '\n' ',' | sed 's/- //g;s/,$//')
-          echo "title=chore: sync skills ($changed)" >> "$GITHUB_OUTPUT"
+          title=$(python3 .github/scripts/sync_title.py <<< "$changed")
+          echo "title=$title" >> "$GITHUB_OUTPUT"
           {
             echo 'body<<EOFBODY'
             echo "## Automated skills sync"
