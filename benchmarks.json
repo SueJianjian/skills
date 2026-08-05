@@ -1,13 +1,14 @@
 {
   "schema_version": 2,
   "source": "skills/*/BENCHMARK.md",
-  "skill_count": 316,
-  "result_row_count": 2875,
+  "skill_count": 315,
+  "result_row_count": 2855,
   "skills_without_results": [
     "cufolio",
     "cuopt-multi-objective-exploration",
     "deepstream-generate-pipeline",
     "digital-health-clinical-asr-setup",
+    "doca-telemetry-exporter",
     "dynamo-interconnect-check",
     "dynamo-recipe-runner",
     "dynamo-router-starter",
@@ -1350,18 +1351,18 @@
     },
     {
       "skill": "doca-telemetry-exporter",
-      "evaluation_date": "2026-07-26",
+      "evaluation_date": "2026-07-29",
       "profile": null,
       "environment": "k8s-sandbox",
-      "tasks": 4,
+      "tasks": null,
       "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
+      "pass_threshold_pct": null,
       "verdict": "PASS",
       "agents": [],
       "catalog_dir": "doca-telemetry-exporter",
       "component": "DOCA",
-      "has_results": true,
-      "average_uplift_pct": 31.7
+      "has_results": false,
+      "average_uplift_pct": null
     },
     {
       "skill": "doca-telemetry-utils",
@@ -3909,24 +3910,6 @@
       "component": "Physical AI",
       "has_results": true,
       "average_uplift_pct": 36.4
-    },
-    {
-      "skill": "physical-ai-people-attribute-search",
-      "evaluation_date": "2026-07-02",
-      "profile": "external",
-      "environment": "astra-sandbox",
-      "tasks": 10,
-      "attempts_per_task": 1,
-      "pass_threshold_pct": 50.0,
-      "verdict": "PASS",
-      "agents": [
-        "claude-code",
-        "codex"
-      ],
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "has_results": true,
-      "average_uplift_pct": 1.2
     },
     {
       "skill": "physical-ai-video-data-augmentation",
@@ -12464,96 +12447,6 @@
       "agent": "Codex (`openai/openai/gpt-5.5`)",
       "score_pct": 98.0,
       "uplift_pct": 56.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Security",
-      "num": 4,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Security",
-      "num": 4,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Correctness",
-      "num": 4,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 40.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Correctness",
-      "num": 4,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 100.0,
-      "uplift_pct": 20.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Discoverability",
-      "num": 4,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 100.0,
-      "uplift_pct": 25.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Discoverability",
-      "num": 4,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 94.0,
-      "uplift_pct": 34.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Effectiveness",
-      "num": 4,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 94.0,
-      "uplift_pct": 71.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Effectiveness",
-      "num": 4,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 81.0,
-      "uplift_pct": 31.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Efficiency",
-      "num": 4,
-      "agent": "Claude Code (`aws/anthropic/bedrock-claude-opus-4-8`)",
-      "score_pct": 94.0,
-      "uplift_pct": 30.0
-    },
-    {
-      "catalog_dir": "doca-telemetry-exporter",
-      "component": "DOCA",
-      "dimension": "Efficiency",
-      "num": 4,
-      "agent": "Codex (`openai/openai/gpt-5.5`)",
-      "score_pct": 100.0,
-      "uplift_pct": 66.0
     },
     {
       "catalog_dir": "doca-telemetry-utils",
@@ -23849,96 +23742,6 @@
       "agent": "codex",
       "score_pct": 91.0,
       "uplift_pct": 40.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Security",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Security",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 100.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 84.0,
-      "uplift_pct": 3.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Correctness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 89.0,
-      "uplift_pct": 3.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 85.0,
-      "uplift_pct": -1.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Discoverability",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 82.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 85.0,
-      "uplift_pct": 4.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Effectiveness",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 95.0,
-      "uplift_pct": 2.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "claude-code",
-      "score_pct": 78.0,
-      "uplift_pct": 0.0
-    },
-    {
-      "catalog_dir": "physical-ai-people-attribute-search",
-      "component": null,
-      "dimension": "Efficiency",
-      "num": 8,
-      "agent": "codex",
-      "score_pct": 76.0,
-      "uplift_pct": 1.0
     },
     {
       "catalog_dir": "physical-ai-video-data-augmentation",
