@@ -3924,7 +3924,7 @@
         "codex"
       ],
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "has_results": true,
       "average_uplift_pct": 1.2
     },
@@ -23852,7 +23852,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Security",
       "num": 8,
       "agent": "claude-code",
@@ -23861,7 +23861,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Security",
       "num": 8,
       "agent": "codex",
@@ -23870,7 +23870,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Correctness",
       "num": 8,
       "agent": "claude-code",
@@ -23879,7 +23879,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Correctness",
       "num": 8,
       "agent": "codex",
@@ -23888,7 +23888,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Discoverability",
       "num": 8,
       "agent": "claude-code",
@@ -23897,7 +23897,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Discoverability",
       "num": 8,
       "agent": "codex",
@@ -23906,7 +23906,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Effectiveness",
       "num": 8,
       "agent": "claude-code",
@@ -23915,7 +23915,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Effectiveness",
       "num": 8,
       "agent": "codex",
@@ -23924,7 +23924,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Efficiency",
       "num": 8,
       "agent": "claude-code",
@@ -23933,7 +23933,7 @@
     },
     {
       "catalog_dir": "physical-ai-people-attribute-search",
-      "component": "Physical AI",
+      "component": null,
       "dimension": "Efficiency",
       "num": 8,
       "agent": "codex",
